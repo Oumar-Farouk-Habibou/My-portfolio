@@ -1,6 +1,7 @@
 <script setup>
 import { useSite } from '../composables/useSite'
-import { links } from '../content'
+import { socials } from '../socials'
+
 const { c } = useSite()
 const year = new Date().getFullYear()
 </script>
@@ -9,11 +10,18 @@ const year = new Date().getFullYear()
   <footer class="site-footer">
     <div class="wrap row">
       <p>© {{ year }} Oumar Farouk Mahaman Habibou · {{ c.footer.made }}</p>
-      <p class="f-links">
-        <a :href="links.linkedin" target="_blank" rel="noopener">LinkedIn</a>
-        <a :href="links.github" target="_blank" rel="noopener">GitHub</a>
-        <a href="#top">{{ c.ui.top }} ↑</a>
-      </p>
+      <ul class="socials footer-socials">
+        <li v-for="s in socials" :key="s.name">
+          <a :href="s.href" :aria-label="s.name" :title="s.name" :target="s.external ? '_blank' : null" rel="noopener">
+            <svg viewBox="0 0 24 24" :class="{ line: s.line }" aria-hidden="true" v-html="s.icon"></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#top" :aria-label="c.ui.top" :title="c.ui.top">
+            <svg viewBox="0 0 24 24" class="line" aria-hidden="true"><path d="m18 15-6-6-6 6" /></svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 </template>
