@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useSite } from '../composables/useSite'
 import { links } from '../content'
+import { socials } from '../socials'
 import StatCounter from './StatCounter.vue'
 import HeroBackdrop from './HeroBackdrop.vue'
 
@@ -26,10 +27,11 @@ const photoSrc = '/photo.jpg' // dépose ta photo dans public/photo.jpg
           <a class="btn ghost" :href="links.cv" download>{{ c.ui.cv }} ↓</a>
         </div>
         <ul class="socials" v-reveal="{ delay: 340 }">
-          <li><a :href="links.linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a :href="links.github" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a :href="'mailto:' + links.email">E-mail</a></li>
-          <li><a :href="links.whatsapp" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li v-for="s in socials" :key="s.name">
+            <a :href="s.href" :aria-label="s.name" :title="s.name" :target="s.external ? '_blank' : null" rel="noopener">
+              <svg viewBox="0 0 24 24" :class="{ line: s.line }" aria-hidden="true" v-html="s.icon"></svg>
+            </a>
+          </li>
         </ul>
       </div>
 
