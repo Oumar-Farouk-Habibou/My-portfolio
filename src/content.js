@@ -115,10 +115,10 @@ const fr = {
     eyebrow: 'Formation',
     title: 'Formation, certifications et langues.',
     studies: [
-      { y: '2022 – 2026', t: "Bachelor (Bac+4) en Informatique et Technologies de l'Information", o: 'Université Islamique au Niger (UIN) · Faculté des Sciences et Techniques' },
-      { y: '2022 – 2024', t: 'BTS en Informatique de Gestion', o: '' },
-      { y: '2019 – 2022', t: 'Baccalauréat Professionnel en Informatique de Gestion', o: 'LEP Issa Beri' },
-      { y: '2019 – 2021', t: "BEP en Informatique de Gestion", o: 'LEP Issa Beri' }
+      { t: "Bachelor (Bac+4) en Informatique et Technologies de l'Information", o: 'Université Islamique au Niger (UIN) · Faculté des Sciences et Techniques' },
+      { t: 'BTS en Informatique de Gestion', o: '' },
+      { t: 'Baccalauréat Professionnel en Informatique de Gestion', o: 'LEP Issa Beri' },
+      { t: "BEP en Informatique de Gestion", o: 'LEP Issa Beri' }
     ],
     certsTitle: 'Certifications',
     certs: ['Cisco · Networking Basics', 'Cisco · JavaScript Essentials 1'],
@@ -246,10 +246,10 @@ const en = {
     eyebrow: 'Education',
     title: 'Education, certifications and languages.',
     studies: [
-      { y: '2022 – 2026', t: "Bachelor's degree (4 years) in Computer Science and Information Technology", o: 'Islamic University of Niger (UIN) · Faculty of Science and Technology' },
-      { y: '2022 – 2024', t: 'Higher Technician Diploma (BTS) in Business Computing', o: '' },
-      { y: '2019 – 2022', t: 'Professional Baccalaureate in Business Computing', o: 'LEP Issa Beri' },
-      { y: '2019 – 2021', t: 'Vocational Certificate (BEP) in Business Computing', o: 'LEP Issa Beri' }
+      { t: "Bachelor's degree (4 years) in Computer Science and Information Technology", o: 'Islamic University of Niger (UIN) · Faculty of Science and Technology' },
+      { t: 'Higher Technician Diploma (BTS) in Business Computing', o: '' },
+      { t: 'Professional Baccalaureate in Business Computing', o: 'LEP Issa Beri' },
+      { t: 'Vocational Certificate (BEP) in Business Computing', o: 'LEP Issa Beri' }
     ],
     certsTitle: 'Certifications',
     certs: ['Cisco · Networking Basics', 'Cisco · JavaScript Essentials 1'],
