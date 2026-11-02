@@ -487,3 +487,15 @@ form label{font-size:.95rem}
 
 /* ===== Formation : sans dates ===== */
 .studies li{grid-template-columns:1fr}
+
+/* ===== Espaces réduits entre les sections ===== */
+.section{padding:72px 0}
+.hero+.section{padding-top:72px}
+.hero{padding:112px 0 0}
+.stats{margin-top:48px}
+.head{margin-bottom:40px}
+.eyebrow{margin-bottom:16px}
+.head h2::after{margin-top:16px}
+.project{margin-bottom:56px}
+.timeline{gap:12px}
+@media(max-width:980px){.section{padding:56px 0}}
