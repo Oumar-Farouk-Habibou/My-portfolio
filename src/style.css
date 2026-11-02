@@ -484,3 +484,6 @@ form label{font-size:.95rem}
   -webkit-mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
 #experience::before{background-image:repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 11%,transparent) 0 1px,transparent 1px 20px)}
 #projects::before{background-image:radial-gradient(color-mix(in srgb,var(--accent) 26%,transparent) 1.3px,transparent 1.7px);background-size:28px 28px}
+
+/* ===== Formation : sans dates ===== */
+.studies li{grid-template-columns:1fr}

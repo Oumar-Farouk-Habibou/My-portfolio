@@ -11,7 +11,6 @@ const { c } = useSite()
       <div class="edu-grid">
         <ol class="studies" v-reveal>
           <li v-for="s in c.education.studies" :key="s.t">
-            <span class="y mono">{{ s.y }}</span>
             <div><strong>{{ s.t }}</strong><small v-if="s.o">{{ s.o }}</small></div>
           </li>
         </ol>
